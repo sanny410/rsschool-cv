@@ -1,0 +1,159 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway", sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1000px;
+}
+.container header {
+    max-width: 100%;
+    background-color: #34D0B6;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.container header h1 {
+    font-size: 28px;
+    text-align: center;
+    margin-top: 0;
+    padding-top: 10px;
+}
+.container header div {
+    font-size: 18px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.container main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    box-sizing: border-box;
+}
+.container main h2 {
+    background-color: #34D0B6;
+    font-size: 18px;
+    padding-left: 20px;
+    color: white;
+    margin: 0;
+    text-align: center;
+    padding-top: 3px;
+    padding-bottom: 10px;
+}
+.container main h2 img {
+    width: 25px !important;
+    height: 25px !important;
+    border: 0 !important;
+    margin-right: 5px;
+    align-content: center;
+    margin-top: 5px;
+    border-radius: 0 !important;
+}
+.container main aside {
+    padding: 10px;
+    background-color: #34D0B6;
+    color: white;
+    box-sizing: border-box;
+}
+.container main aside #info {
+    text-align: center;
+}
+.container main aside img {
+    width: 300px;
+    height: 300px;
+    border-radius: 160px;
+    border: 2px solid white;
+    margin-top: 20px;
+}
+.container main aside ul {
+    padding-left: 10px;
+}
+.container main aside ul li {
+    font-size: 16px;
+    color: black;
+    list-style-type: none;
+    margin-bottom: 5px;
+}
+.container main aside ul li b {
+    color: white;
+}
+.container main article {
+    box-sizing: border-box;
+}
+.container main article p {
+    padding-left: 20px;
+}
+.container main article pre {
+    white-space: pre;
+}
+.container main article #code {
+    width: 90%;
+    padding-left: 10px;
+}
+.container main article li {
+    margin-bottom: 5px;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #34D0B6;
+    text-align: center;
+    border-top: 2px solid white;
+    color: white;
+}
+footer div {
+    font-size: 24px;
+    width: 30%;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 25px;
+    padding-top: 10px;
+}
+footer div a {
+    text-decoration: none;
+    color: black;
+}
+footer img#rs-icon {
+    width: 100px;
+    height: 50px;
+}
+
+@media (max-width: 480px) {
+    header div {
+        font-size: 12px !important;
+    }
+    header h1 {
+        font-size: 14px !important;
+    }
+
+    .container main {
+        font-size: 12px !important;
+    }
+    .container main h2 {
+        font-size: 14px !important;
+    }
+    .container main h2 img {
+        width: 15px !important;
+        height: 15px !important;
+    }
+    .container main li {
+        font-size: 12px !important;
+    }
+    .container main aside img {
+        width: 100px;
+        height: 100px;
+        padding: 0;
+    }
+
+    footer div {
+        font-size: 12px !important;
+    }
+}
