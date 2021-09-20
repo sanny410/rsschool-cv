@@ -1,10 +1,93 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title> </title>
+    <title>CV Lashukova Evgeniya</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,100;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
+<div class="container">
+    <header>
+        <h1>Lashukova Evgeniya</h1>
+        <div>Junior Frontend Developer</div>
+    </header>
+    <main>
+        <aside>
+            <aside id="info">
+                <img src="icons/photo.jpg" alt="photo">
+            </aside>
+            <div id="contacts">
+                <h2><img src="icons/contact.svg" alt="contacts_icon">Contacts</h2>
+                <ul>
+                    <li><b>Location:</b> Russia, Saint-Petersburg</li>
+                    <li><b>Phone:</b> +7(999)235-09-05</li>
+                    <li><b>Email:</b> zhenya-lashukova@yandex.ru</li>
+                    <li><b>GitHub:</b> sanny410</li>
+                    <li><b>Telegram:</b> @zhenya-lashukova410</li>
+                </ul>
+            </div>
+            <article id="languages">
+                <h2><img src="icons/languages.svg" alt="languages_icon"> Languages</h2>
+                <ul>
+                    <li><b>Russian</b>: Native</li>
+                    <li><b>English</b>: Pre-Intermediate (A2)</li>
+                </ul>
+            </article>
+        </aside>
+        <div>
+            <article id="about-me">
+                <h2><img src="icons/user.svg" alt="user_icon"> About me</h2>
+                <p>I have been studying frontend development on my own for six months using books and free courses. Made several web pages in HTML, CSS, SCSS, JavaScript.</p>
+                <p>I want to develop in this area, improve the quality of development, master new technologies. I chose frontend because I like to see the result right away. I plan to study the React in the near future.</p>
+            </article>
+            <article id="skills">
+                <h2><img src="icons/pencil.svg" alt="skills_icon"> Skills and Proficiency</h2>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS/ SASS</li>
+                    <li>JavaScript Basics</li>
+                    <li>Git, GitHub</li>
+                    <li>WebStorm, VS Code</li>
+                </ul>
+            </article>
+            <article id="education">
+                <h2><img src="icons/graduation-cap.svg" alt="courses_icon">Courses</h2>
+                <ul>
+                    <li>Complete course on JavaScript + React - from scratch to result (Ivan Petrichenko)</li>
+                    <li>HTML Academy Courses in HTML, CSS, JavaScript</li>
+                </ul>
+            </article>
+            <article id="code_examples">
+                <h2><img src="icons/web-programming.svg" alt="code_icon"> Code Example</h2>
+                <pre><code class="html">
+        let modalClose = document.getElementsByClassName('close'),
+        modalOpen = document.getElementsByClassName('btn');
 
+        Array.from(modalClose, closeBtn => {
+            closeBtn.addEventListener('click', (e) => {
+                e.target.parentNode.parentNode.parentNode.style.visibility = 'hidden';
+                });
+            });
+
+        Array.from(modalOpen, openBtn => {
+            openBtn.addEventListener('click', (e) => {
+                let modalId = e.target.getAttribute('data-id');
+                document.getElementById(modalId).style.visibility = 'visible';
+            });
+        });
+                    </code></pre>
+            </article>
+        </div>
+    </main>
+    <footer>
+        <div>2021</div>
+        <div><img src="icons/github.svg" alt="github"> <a href="https://github.com/sanny410">Visit My GitHub </a></div>
+        <div><a href="https://rs.school/js/"> <img id="rs-icon" src="icons/rs_school_logo.svg" alt="rs-school-icon"></a></div>
+    </footer>
+</div>
 </body>
 </html>
